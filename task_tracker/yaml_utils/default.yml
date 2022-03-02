@@ -1,0 +1,12 @@
+task:
+    Action: 
+        Say: []
+        Do: []
+    Memory: {}
+    TriggeredBy: __TaskClassifier__
+    Complete: true
+    Possible: false
+slot_settings:
+    Default: null
+    Prompt: null
+    Scope: Global

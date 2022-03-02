@@ -1,0 +1,43 @@
+Tasks:
+    ChitChat:
+        Action: 
+            Say:
+                - This is an example template {name}
+                - This is an example generated __ExampleAction__
+            Do: 
+                - ExampleAction({location})
+        Memory:
+            name:
+                Default: Bob
+                Scope: Local
+                Prompt: What is your name?
+            location:
+                Prompt: Where to?
+        TriggeredBy: ({intent}=='Greet' and 'hi' in {user_utterance})
+    Greet:
+        Action:
+            Say: 
+                - Hello {name}
+                - Hi {name}. Nice to meet you!
+        Memory:
+            name:
+                Prompt: Who are you?
+    Joke:
+    Faq:
+    Repeat:
+    TellTime:
+    Abusive:
+    Calculate:
+    Read:
+    Show:
+    Jump:
+    Sing:
+Slots:
+    intent: [100]
+    topic: [100]
+    open_tasks: [100]
+    sentiment: [100]
+    formality: [100]
+    name: [100]
+    location: [100]
+    user_utterance: [100]

@@ -1,0 +1,4 @@
+nlp_core @ git+https://nlp_core:kFoUt8JUsoVMRucjnzbm@git.oxolo.com/development/oxolo-kids-nlp/nlp-core.git@v3.0.2-rc
+sklearn
+conversation-metrics
+chars2vec
